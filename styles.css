@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* to vertically center the app */
+}
+
+.counter-div {
+  width: 40rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  background-color: rgb(44, 113, 190);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.counter-div > * {
+  /* to access direct children */
+  margin-bottom: 2rem;
+}
+
+.count {
+  font-size: 4rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.subtract {
+  background-color: orangered;
+}
+
+button.reset {
+  background-color: white;
+}
+
+button.add {
+  background-color: green;
+}
